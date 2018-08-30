@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>online registration system</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="jquery.min.js" charset="utf-8"></script>
+    <script src="index.js" charset="utf-8"></script>
+    <style>
+  .checkele{
+  margin-top:20px;
+  margin-left:1000px;
+  width:200px;
+  height:40px;
+  background-color:brown;
+  }
+  </style>
+  </head>
+  <body>
+  <div class="menu-box">
+    <div class="nav-top">
+      <div class="nav-top-setting">
+        <a href="#" class="nav-content">Home</a>
+        <a href="#" class="nav-content">Tel.Directory</a>
+        <a href="#" class="nav-content">Contact</a>
+      </div>
+    </div>
+    <div class="menu">
+      <div class="container">
+        <img src="klogo.png" alt="logo" class="logo">
+      </div>
+      <div class="divider"></div>
+    </div>
+  </div>
+  <form action="show" method="post">
+  <input type="submit" value="check Elective " class="checkele"></form>
+  <div class="fro-sub-con">
+      <div class="container">
+        <span class="orp">Online Registration Portal</span>
+        <div class="form-content col-lg-6 col-md-6">
+           <form action="next" method="post">
+          <label for="name">Name</label>
+          <input type="text" name="name" placeholder="enter name" required="true"id="Name" class="form-control" ><br>
+          <label for="roll no">Roll No</label>
+          <input type="text" name="roll" placeholder="enter roll number" id="Roll" class="form-control"><br>
+		   <label for="Gmail ID">Gmail</label>
+          <input type="email" name="gmail" placeholder="enter gmail" required="true"id="gmail" class="form-control" ><br>
+          <label for="branch">Branch</label>
+          <select  class="form-control" name="branch" id="branch">
+            <option value="">select branch</option>
+            <option value="CIVIL">CIVIL</option>
+            <option value="EEE">EEE</option>
+            <option value="MED">MED</option>
+            <option value="ECE">ECE</option>
+            <option value="CSE">CSE</option>
+          </select><br>
+          <label for="sem">Semester</label>
+          <select  class="form-control" name="sem" id="sem">
+            <option value="">select</option>
+            <option value="1">1</option>
+            <option value="5">5</option>
+          </select><br>
+          <label for="CGPI">CGPI</label>
+          <input type="text" name="cgpi" placeholder="enter CGPI" size="4"  class="form-control" max="10"><br>
+          <!--open elective system-->
+
+
+          <div class="oes">
+            <div class="oes-divider"></div>
+            <h3>Fill your open elective choice(choose diffrent subjects in all choice)</h3>
+            <div class="oes-odd">
+              <label for="First Choice">First Choice</label>
+              <select  class="form-control" name="firstChoice" id="#firstChoice">
+                <option value="">select subject</option>
+                <option value="maths" class="cpm">maths</option>
+                <option value="physics" class="fuzzy">physics</option>
+                <option value="chemistry" class="qe">chemistry</option>
+                 </select>
+               <br>
+              <label for="Second Choice">Second Choice</label>
+              <select  class="form-control" name="secondChoice">
+                <option value="">select subject</option>
+                <option value="maths" class="cpm">maths</option>
+                <option value="physics" class="fuzzy">physics</option>
+                <option value="chemistry" class="qe">chemistry</option>
+                </select>
+                <br>
+              <label for="Third Choice">Third Choice</label>
+              <select  class="form-control" name="thirdChoice">
+                <option value="">select subject</option>
+                <option value="maths" class="cpm">maths</option>
+                <option value="physics" class="fuzzy">physics</option>
+                <option value="chemistry" class="qe">chemistry</option>
+                 </select><br>
+            </div>
+
+          </div>
+          <br><input type="submit" name="submit" value="submit" class="btn btn-success">
+           </form>
+          </div>
+
+
+            <!--subject contants-->
+          <div class="sub-content col-lg-6 col-md-6">
+            <h2>subjects</h2>
+            <div class="first-sem-sub-ece" id="ecefst">
+              <table border="1" height="400" width="600" cellspacing="5" cellpadding="5">
+                <tr>
+                  <td>S No</td><td>Code</td><td>Subject</td> <td>L T P</td> <td>Credits</td>
+                <tr>
+                  <td>1</td><td>ECS-111</td><td>Engineering Mathematics-I</td> <td>3 1 0</td> <td>3</td>
+                </tr>
+                <tr>
+                  <td>2</td><td>ECS-112</td><td>Physics for Electronics Engineering</td> <td>3 1 0</td> <td>3</td>
+                </tr>
+                <tr>
+                  <td>3</td><td>ECS-113</td><td>Basic Environmental Science &amp; engineering</td> <td>3 1 0</td> <td>3</td>
+                </tr>
+                <tr>
+                  <td>4</td><td>ECD-114</td><td>Basic Electronics Engineering</td> <td>3 1 0</td> <td>3</td>
+                </tr>
+                <tr>
+                  <td>5</td><td>ECD-115</td><td>Engineering Graphics</td> <td>1 0 3</td> <td>3</td>
+                </tr>
+                <tr>
+                  <td>6</td><td>ECS-116</td><td>Physics Lab</td> <td>0 0 1</td> <td>1</td>
+                </tr>
+                <tr>
+                  <td>7</td><td>ECD-117</td><td>Basic Electronics Lab</td> <td>0 0 1</td> <td>1</td>
+                </tr>
+                <tr>
+                  <td>8</td><td>ECD-118</td><td>Workshop</td> <td>0 0 1</td> <td>2</td>
+                </tr>
+                <tr>
+                  <td>9</td><td></td><td></td> <td></td> <td></td>
+                </tr>
+              </table>
+            </div>
+            <!--civil 1 sem-->
+            <div class="first-sem-sub-ece" id="civilfst">
+              <table border="1" height="400" width="600" cellspacing="5" cellpadding="5">
+                <tr>
+                  <td>S No</td><td>Code</td><td>Subject</td> <td>L T P</td> <td>Credits</td>
+                <tr>
+                  <td>1</td><td>CES-111</td><td>Engineering Mathematics-I</td> <td>3 1 0</td> <td>3</td>
+                </tr>
+                <tr>
+                  <td>2</td><td>CES-112</td><td>C fohemistryr for Civil Engineering</td> <td>3 1 0</td> <td>3</td>
+                </tr>
+                <tr>
+                  <td>3</td><td>CEH-113</td><td>Communication Skills</td> <td>3 1 0</td> <td>3</td>
+                </tr>
+                <tr>
+                  <td>4</td><td>CED-114</td><td>BUilding Materials</td> <td>3 1 0</td> <td>3</td>
+                </tr>
+                <tr>
+                  <td>5</td><td>CED-115</td><td>Engineering Graphics</td> <td>1 0 3</td> <td>3</td>
+                </tr>
+                <tr>
+                  <td>6</td><td>CES-116</td><td>chemistry Lab</td> <td>0 0 1</td> <td>1</td>
+                </tr>
+                <tr>
+                  <td>7</td><td>CEH-117</td><td>ommunication LabC</td> <td>0 0 1</td> <td>1</td>
+                </tr>
+                <tr>
+                  <td>8</td><td>CED-118</td><td>Build Material Lab</td> <td>0 0 1</td> <td>2</td>
+                </tr>
+                <tr>
+                  <td>9</td><td></td><td></td> <td></td> <td></td>
+                </tr>
+              </table>
+            </div>
+              <!--civil fiveth sem-->
+              <div class="first-sem-sub-ece" id="civilfiveth">
+                <table border="1" height="400" width="600" cellspacing="5" cellpadding="5">
+                  <tr>
+                    <td>S No</td><td>Code</td><td>Subject</td> <td>L T P</td> <td>Credits</td>
+                  <tr>
+                    <td>1</td><td>CED-211</td><td>Engineering Mathematics-III</td> <td>3 1 0</td> <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>2</td><td>CED-212</td><td>Analog Electronics</td> <td>3 1 0</td> <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>3</td><td>CED-213</td><td>Digital Electronics and logic Design</td> <td>3 1 0</td> <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>4</td><td>CED-214</td><td>Network Analysis and Synthesis</td> <td>3 1 0</td> <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>5</td><td>CED-215</td><td>Communication Theory</td> <td>3 1 0</td> <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>6</td><td>CED-216</td><td>Open Elective I</td> <td>3 1 0</td> <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>7</td><td>CED-217</td><td>Analog Electronics Lab</td> <td>0 0 1</td> <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>8</td><td>CED-218</td><td>Digital Electronics Lab</td> <td>0 0 1</td> <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>9</td><td>CED-219</td><td>Circuit Design &amp; Simulation lab</td> <td>0 0 1</td> <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>10</td><td></td><td></td> <td></td> <td></td>
+                  </tr>
+                </table>
+              </div>
+           <!--ece 5 sem-->
+          <div class="first-sem-sub-ece" id="ecefiveth">
+            <table border="1" height="400" width="600" cellspacing="5" cellpadding="5">
+              <tr>
+                <td>S No</td><td>Code</td><td>Subject</td> <td>L T P</td> <td>Credits</td>
+              <tr>
+                <td>1</td><td>ECD-211</td><td>Engineering Mathematics-III</td> <td>3 1 0</td> <td>3</td>
+              </tr>
+              <tr>
+                <td>2</td><td>ECD-212</td><td>Analog Electronics</td> <td>3 1 0</td> <td>3</td>
+              </tr>
+              <tr>
+                <td>3</td><td>ECD-213</td><td>Digital Electronics and logic Design</td> <td>3 1 0</td> <td>3</td>
+              </tr>
+              <tr>
+                <td>4</td><td>ECD-214</td><td>Network Analysis and Synthesis</td> <td>3 1 0</td> <td>3</td>
+              </tr>
+              <tr>
+                <td>5</td><td>ECD-215</td><td>Communication Theory</td> <td>3 1 0</td> <td>3</td>
+              </tr>
+              <tr>
+                <td>6</td><td>ECD-216</td><td>Open Elective I</td> <td>3 1 0</td> <td>3</td>
+              </tr>
+              <tr>
+                <td>7</td><td>ECD-217</td><td>Analog Electronics Lab</td> <td>0 0 1</td> <td>1</td>
+              </tr>
+              <tr>
+                <td>8</td><td>ECD-218</td><td>Digital Electronics Lab</td> <td>0 0 1</td> <td>1</td>
+              </tr>
+              <tr>
+                <td>9</td><td>ECD-219</td><td>Circuit Design & Simulation lab</td> <td>0 0 1</td> <td>1</td>
+              </tr>
+              <tr>
+                <td>10</td><td></td><td></td> <td></td> <td></td>
+              </tr>
+            </table>
+          </div>
+          <!--eee first sem -->
+          <div class="first-sem-sub-ece" id="eeefst">
+            <table border="1" height="400" width="600" cellspacing="5" cellpadding="5">
+              <tr>
+                <td>S No</td><td>Code</td><td>Subject</td> <td>L T P</td> <td>Credits</td>
+              <tr>
+                <td>1</td><td>ECS-111</td><td>Engineering Mathematics-I</td> <td>3 1 0</td> <td>3</td>
+              </tr>
+              <tr>
+                <td>2</td><td>ECS-112</td><td>Physics for Electronics Engineering</td> <td>3 1 0</td> <td>3</td>
+              </tr>
+              <tr>
+                <td>3</td><td>ECS-113</td><td>Basic Environmental Science &amp; engineering</td> <td>3 1 0</td> <td>3</td>
+              </tr>
+              <tr>
+                <td>4</td><td>ECD-114</td><td>Basic Electronics Engineering</td> <td>3 1 0</td> <td>3</td>
+              </tr>
+              <tr>
+                <td>5</td><td>ECD-115</td><td>Engineering Graphics</td> <td>1 0 3</td> <td>3</td>
+              </tr>
+              <tr>
+                <td>6</td><td>ECS-116</td><td>Physics Lab</td> <td>0 0 1</td> <td>1</td>
+              </tr>
+              <tr>
+                <td>7</td><td>ECD-117</td><td>Basic Electronics Lab</td> <td>0 0 1</td> <td>1</td>
+              </tr>
+              <tr>
+                <td>8</td><td>ECD-118</td><td>Workshop</td> <td>0 0 1</td> <td>2</td>
+              </tr>
+              <tr>
+                <td>9</td><td></td><td></td> <td></td> <td></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+  </div>
+</body>
+</html>

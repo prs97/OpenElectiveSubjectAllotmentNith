@@ -1,0 +1,81 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  background-color: #d0d0d0;
+}
+.menu-box{
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+.nav-top{
+  background-color: #00004d;
+  height: 20px;
+  width: 100%;
+  font-size: 15px;
+}
+.nav-top-setting{
+  float: right;
+  margin-right: 200px;
+}
+.nav-content{
+  margin:1px 3px 1px 3px;
+  text-decoration: none;
+  color: #ffffff;
+}
+.menu{
+  height: 110px;
+  position: relative;
+  background-color: #660000;
+  padding-bottom: 6px;
+}
+.logo{
+  height: 112px;
+}
+.divider{
+  position: relative;
+  margin-top: -5px;
+  background-color: #00004d;
+  height: 15px;
+  text-align: center;
+}
+.fro-sub-con{
+  margin-top: 10px;
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+.orp{
+  font-size: 25px;
+  font-family: algerian;
+  font-weight: bold;
+  color: #00000c;
+}
+.form-content{
+  position: relative;
+  margin-top: 10px;
+  height: auto;
+  width: 40%;
+}
+
+.oes-divider{
+  position: relative;
+  height: 10px;
+  width: 100%;
+  background-color: #4d79ff;
+}
+.oes{
+  display: none;
+  height: auto;
+  width: 100%;
+  border: 1px solid #000;
+}
+.sub-content{
+  float: right;
+  height: 400px;
+  width: 602px;
+  margin-top: 10px;
+}
+.first-sem-sub-ece{
+  display: none;
+}
